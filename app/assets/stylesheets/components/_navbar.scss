@@ -1,0 +1,27 @@
+.navbar-lewagon {
+  background-color: #FFCB00;
+  transition: 0.5s background-color ease;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 100%;
+}
+
+.nav-item {
+  padding: 0px 10px;
+}
+// .nav-link {
+//   color: black;
+// }
+
+// .nav-item:hover {
+//   background-color: black;
+//   color: black;
+//   opacity: .5;
+//   border-radius: 5px;
+//   cursor: pointer;
+// }

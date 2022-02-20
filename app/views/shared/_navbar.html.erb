@@ -1,0 +1,42 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <div class="container justify-content-around"">
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "nerf_logo_horizontal_yellow.svg" %>
+    <% end %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle btn-nerf" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Equipe
+          </a>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Membros</a>
+            <a class="dropdown-item" href="#">Colaboradores</a>
+            <a class="dropdown-item" href="#">Colaboradores antigos</a>
+          </div>
+        </li>
+        <%# if user_signed_in? %>
+          <li class="nav-item btn-nerf">
+            <%= link_to "Produção", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item btn-nerf">
+            <%= link_to "Siriema", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item btn-nerf">
+            <%= link_to "Sites sugeridos", "#", class: "nav-link" %>
+          </li>
+          <li class="nav-item btn-nerf">
+            <%= link_to "Contato", "#", class: "nav-link" %>
+          </li>
+        <%# else %>
+          <!--li class="nav-item"-->
+            <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <!--/li-->
+        <%# end %>
+      </ul>
+    </div>
+  </div>
+</div>
