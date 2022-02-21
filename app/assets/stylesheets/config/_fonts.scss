@@ -4,13 +4,3 @@
 // Define fonts for body and headers
 $body-font: "Inter", "Helvetica", "sans-serif";
 $headers-font: "Inter", "Helvetica", "sans-serif";
-
-// To use a font file (.woff) uncomment following lines
-@font-face {
-  font-family: "Inter";
-  src: font-url('Inter.eot');
-  src: font-url('Inter.eot?#iefix') format('embedded-opentype'),
-       font-url('Inter.woff') format('woff'),
-       font-url('Inter.ttf') format('truetype')
-}
-// $my-font: "Font Name";
