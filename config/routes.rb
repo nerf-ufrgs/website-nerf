@@ -3,4 +3,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'home#index'
+
+  # Paths to Members
+  get 'members', to: 'members#members', as: :members
+  get 'collaborators', to: 'members#collaborators', as: :collaborators
+  get 'ancient_collaborators', to: 'members#ancient_collaborators', as: :ancient_collaborators
 end

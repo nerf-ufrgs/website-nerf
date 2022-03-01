@@ -12,10 +12,10 @@
           <a class="nav-link dropdown-toggle btn-nerf" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Equipe
           </a>
-          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Membros</a>
-            <a class="dropdown-item" href="#">Colaboradores</a>
-            <a class="dropdown-item" href="#">Colaboradores antigos</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <%= link_to "Membros", members_path, class: "dropdown-item" %>
+            <%= link_to "Colaboradores", collaborators_path, class: "dropdown-item" %>
+            <%= link_to "Colaboradores antigos", ancient_collaborators_path, class: "dropdown-item" %>
           </div>
         </li>
         <%# if user_signed_in? %>
