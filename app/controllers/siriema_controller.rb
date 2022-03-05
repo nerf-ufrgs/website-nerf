@@ -1,0 +1,2 @@
+class SiriemaController < ApplicationController
+end

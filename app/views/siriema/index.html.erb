@@ -1,0 +1,60 @@
+<div class="basic">
+  <div class="container px-5">
+    <div class="box py-1">
+      <%= image_tag "siriema_logo", style: 'height:15vw;width:16vw;' %>
+    </div>
+    <h3>Sobre o Siriema - Programa para atropelamentos em rodovias</h3>
+    <p>
+    Rodovias estão presentes em quase todos os biomas ao redor do mundo e são responsáveis por uma série de impactos aos ecossistemas. Nas últimas décadas, a Ecologia de Rodovias surgiu como uma linha de pesquisa focada na avaliação e mitigação desses impactos. Atualmente, o atropelamento de animais em rodovias é considerado a principal fonte antrópica de mortalidade direta de vertebrados terrestres em diversas regiões do mundo e é um dos impactos mais estudados por essa disciplina. Contudo, como é comum a diversas áreas da ciência, ainda existe uma distância muito grande entre as informações geradas por pesquisas acerca dos impactos causados por rodovias e sua utilização por governos e sociedade civil na tomada de decisões e planejamento de políticas públicas relacionadas ao meio ambiente.
+    <br>
+    <br>
+    Desenvolvemos o programa Siriema como uma ferramenta para a avaliação do atropelamento de fauna em rodovias e suporte ao planejamento de medidas mitigadoras desse impacto, disponibilizando análises que podem ser utilizadas por pesquisadores, concessionárias de rodovias, empresas de consultoria ambiental, gestores ambientais e de planejamento do transporte do governo. O SIRIEMA pretende auxiliar a responder perguntas importantes neste contexto: existem trechos em uma rodovia com maior mortalidade de fauna por atropelamento? Onde se localizam? Onde concentrar medidas mitigadoras desse impacto?
+    <br>
+    <br>
+    A primeira versão do Siriema foi lançada em 2009, a versão 1.1 foi lançada em julho de 2011, ambas disponibilizando análises para avaliar se uma rodovia apresenta agregações significativas de mortalidade e onde essas agregações se localizam. A versão atual (2.0) foi lançada no primeiro semestre de 2015 com as seguintes inovações:
+    <br>
+    <br>
+    <ul>
+      <li>Entrada de dados tanto em lat-long como UTM;</li>
+      <li>Saída de dados compatível com Google Earth e softwares de SIG, tanto dos resultados das análises como dos dados brutos;</li>
+      <li>Estimativa de mortalidade considerando a capacidade de detecção e a remoção de carcaças;</li>
+      <li>Métodos de estimativa da probabilidade de atropelamento ao longo da rodovia;</li>
+      <li>Ferramenta para geração de dados de atropelamentos para simulação de padrões espaciais de mortalidade.</li>
+    </ul>
+    </p>
+    <p>
+    Você pode nos contatar pelo e-mail <%= mail_to 'siriema@ufrgs.br', 'siriema@ufrgs.br' %>. Sugestões, críticas e comentários são bem vindos para o contínuo processo de melhoria das análises e das funcionalidades do programa. Entretanto, suporte ao usuário será dado de forma limitada e somente para questões específicas que não possam ser resolvidas pela leitura atenta do manual do usuário disponível no site.
+    </p>
+    <h3>Equipe</h3>
+    <strong>Artur Vicente Pfeifer Coelho</strong>, Dr. Física (UFRGS)
+    <i class="fa-solid fa-at"></i> <%= mail_to 'artur.coelho@gmail.com', 'artur.coelho@gmail.com' %>
+    <br>
+    <strong>Igor Pfeifer Coelho</strong>, Dr. Ecologia (UFRGS)
+    <i class="fa-solid fa-at"></i> <%= mail_to 'djakare@gmail.com', 'djakare@gmail.com' %>
+    <br>
+    <strong>Andreas Kindel</strong>, Prof. Dr. Ecologia (UFRGS)
+    <i class="fa-solid fa-at"></i> <%= mail_to 'andreas.kindel@ufrgs.br', 'andreas.kindel@ufrgs.br' %>
+    <br>
+    <strong>Fernanda Zimmermann Teixeira</strong>, Dra. Ecologia (UFRGS)
+    <i class="fa-solid fa-at"></i> <%= mail_to 'fernandazteixeira@gmail.com', 'fernandazteixeira@gmail.com' %>
+    <br>
+    <h5>Arte Gráfica</h5>
+    <strong>Henrique Pfeifer Lopes</strong>
+    <i class="fa-solid fa-at"></i> <%= mail_to 'hhenriquellopes@hotmail.com', 'hhenriquellopes@hotmail.com' %>
+    <br>
+    <h5>Apoio</h5>
+    <strong>Biolaw Consultoria Ambiental</strong>
+    <i class="fa-solid fa-globe"></i> <%= link_to 'biolaw.com.br', 'https://biolaw.com.br/' %>
+    <h3>Download</h3>
+    <p>
+      Seu registro permite acompanhar o número de interessados e usuários pelo produto que estamos disponibilizando e nos ajuda a captar apoiadores para o contínuo aprimoramento do software.
+      <br>
+      <br>
+      <strong>A distribuição do Siriema é gratuita, livre e também desejada.</strong>
+      <br>
+      <br>
+      Após preencher o formulário e clicar em registrar você será direcionado automaticamente para a página de download do Siriema.
+    </p>
+    <h5>Clique <%= link_to 'aqui', new_siriema_user_path %> para acessar o formulário de registro</h5>
+  </div>
+</div>

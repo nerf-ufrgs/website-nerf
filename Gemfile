@@ -5,6 +5,7 @@ ruby "3.0.2"
 
 # Personal gems
 gem 'font-awesome-sass', '~> 5.15', '>= 5.15.1'
+gem 'simple_form', '~> 5.1'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0"
