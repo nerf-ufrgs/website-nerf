@@ -3,7 +3,7 @@ body {
   font-family: "Inter";
 }
 
-p {
+p, li {
   color: #534748;
   text-align: justify;
   font-size: 16px;
@@ -33,4 +33,12 @@ img {
 
 .basic {
   margin-top: 120px;
+}
+
+a {
+  color: #8b8d00;
+}
+
+a:hover {
+  color: red;
 }

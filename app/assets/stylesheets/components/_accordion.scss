@@ -1,0 +1,14 @@
+accordion-item .accordion-item-content.is--expanded {
+  margin-bottom: 0 !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #FFCB00;
+}
+
+.accordion-button {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
