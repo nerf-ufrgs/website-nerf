@@ -1,0 +1,16 @@
+<div class="basic">
+  <div class="container px-5">
+    <div class="box py-1">
+      <%= image_tag "siriema_logo", style: 'height:10vw;width:11vw;' %>
+    </div>
+    <h3>| Download</h3>
+    Obrigado, <strong><%= @siriema_user.name %></strong>, pelo seu interesse no software Siriema!
+    <br>
+    <br>
+    <strong>A distribuição do Siriema é gratuita, livre e também desejada.</strong>
+    <br>
+    <br>
+    Clique no botão abaixo para realizar o download do arquivo .zip que contém o executável do Siriema, bem como o seu manual.
+    <%= button_to "Download", action: "download", class: "btn btn-nerf mt-4" %>
+  </div>
+</div>
