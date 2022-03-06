@@ -1,0 +1,26 @@
+<%= simple_form_for @siriema_user, local: true, data: { turbo: false } do |f| %>
+  <div class="row g-3">
+    <div class="col-md-6">
+      <%= f.input :name, label: false, placeholder: "Nome *" %>
+    </div>
+    <div class="col-md-6">
+      <%= f.input :email, label: false, placeholder: "E-mail *" %>
+    </div>
+    <div class="col-md-6">
+      <%= f.input :city, label: false, placeholder: "Cidade *" %>
+    </div>
+    <div class="col-md-6">
+      <%= f.input :country, label: false, placeholder: "País *", as: :string %>
+    </div>
+    <div class="col-12">
+      <%= f.input :institution, label: false, placeholder: "Instituição *" %>
+    </div>
+    <div class="col-12">
+      <%= f.input :found_out_how, label: false, placeholder: "Como conheceu o Siriema *", as: :text %>
+    </div>
+    <div class="col-12">
+      <%= f.input :worked_where, label: false, placeholder: "Rodovia(s) / ferrovia(s) em que trabalha" %>
+    </div>
+  </div>
+  <%= f.submit "Registrar", class: "btn btn-nerf mt-3" %>
+<% end %>

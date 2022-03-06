@@ -1,17 +1,16 @@
 <div class="basic">
   <div class="container px-5">
-    <%= simple_form_for @siriema_user do |f| %>
-      <%= f.input :name, required: true, label: "Nome:" %> <br>
-      <%= f.input :email, required: true, label: "E-mail:" %> <br>
-      <%= f.input :institution, required: true, label: "Instituição:" %> <br>
-      <%= f.input :city, required: true, label: "Cidade:" %> <br>
-      <%# <%= f.input :country, required: true, label: "País:" %> %> <br>
-      <%= f.input :found_out_how, required: true, label: "Como conheceu o Siriema?", as: :text %> <br>
-      <%= f.input :worked_where, label: "Rodovia(s) / ferrovia(s) em que trabalha:" %> <br>
-      <div class="row">
-        <%= f.submit "Registrar", class: "btn btn-warning mx-2" %>
-        <%# <%= link_to 'Voltar', services_path, class: "btn btn-warning mx-2" %> %>
-      </div>
-    <% end %>
+    <div class="box py-1">
+      <%= image_tag "siriema_logo", style: 'height:10vw;width:11vw;' %>
+    </div>
+    <h3>| Registro para download do software Siriema</h3>
+      <p>
+      Seu registro permite acompanhar o número de interessados e usuários pelo produto que estamos disponibilizando e nos ajuda a captar apoiadores para o contínuo aprimoramento do software.
+      <br>
+      <br>
+      Após preencher o formulário e clicar em registrar você será direcionado automaticamente para a página de download do Siriema.
+    </p>
+    <br>
+    <%= render partial: "form", siriema_user: @siriema_user %>
   </div>
 </div>

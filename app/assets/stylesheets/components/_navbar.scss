@@ -17,9 +17,14 @@
   align-self: center;
   cursor: pointer;
 }
-// .nav-link {
-//   color: black;
-// }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #534748;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #1B1918;
+}
 
 // .nav-item:hover {
 //   background-color: black;
