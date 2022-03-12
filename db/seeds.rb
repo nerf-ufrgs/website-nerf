@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+require 'csv'
+
+require_relative 'read_excel'
+
+SiriemaUser.destroy_all
+
+file_path = 'db/SiriemaUsers.xlsx'
+
+siriema_users = read_excel(file_path)
+
+siriema_users.map.with_index do |key, index|
+  SiriemaUser.create!(
+    name: key[:name]&.strip,
+    institution: key[:institution]&.strip,
+    city: key[:city]&.strip,
+    country: key[:country]&.strip,
+    email: key[:email]&.strip,
+    found_out_how: key[:found_out_how]&.strip,
+    worked_where: key[:worked_where],
+    version: key[:version]
+  )
+  rescue ActiveRecord::RecordInvalid, NoMethodError, ArgumentError => e
+  puts "• Error in row id #{index}: #{e.message}"
+end

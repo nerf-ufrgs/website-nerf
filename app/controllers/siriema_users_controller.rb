@@ -5,6 +5,14 @@ class SiriemaUsersController < ApplicationController
     @siriema_user = SiriemaUser.all
   end
 
+  def download_siriema_pt
+    send_file "#{Rails.root}/public/SIRIEMA_2_0_PT-BR.zip", type: 'application/zip', x_sendfile: true
+  end
+
+  def download_siriema_en
+    send_file "#{Rails.root}/public/SIRIEMA_2_0_EN.zip", type: 'application/zip', x_sendfile: true
+  end
+
   def show
   end
 
@@ -19,6 +27,20 @@ class SiriemaUsersController < ApplicationController
     else
       render :new
     end
+  end
+
+  def download_siriema_en
+    send_file(
+      "#{Rails.root}/public/SIRIEMA_2_0_EN.zip",
+      disposition: 'attachment'
+    )
+  end
+
+  def download_siriema_pt
+    send_file(
+      "#{Rails.root}/public/SIRIEMA_2_0_PT-BR.zip",
+      disposition: 'attachment'
+    )
   end
 
   private

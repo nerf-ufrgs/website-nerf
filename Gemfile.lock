@@ -84,6 +84,9 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
+    creek (2.5.3)
+      nokogiri (>= 1.10.0)
+      rubyzip (>= 1.0.0)
     cssbundling-rails (1.1.0)
       railties (>= 6.0.0)
     debug (1.4.0)
@@ -225,9 +228,9 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
-  activestorage (~> 7.0, >= 7.0.2.2)
   bootsnap
   capybara
+  creek (~> 2.5, >= 2.5.3)
   cssbundling-rails
   debug
   font-awesome-sass (~> 5.15, >= 5.15.1)
