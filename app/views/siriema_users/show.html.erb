@@ -4,13 +4,23 @@
       <%= image_tag "siriema_logo", style: 'height:10vw;width:11vw;' %>
     </div>
     <h3>| Download</h3>
-    Obrigado, <strong><%= @siriema_user.name %></strong>, pelo seu interesse no software Siriema!
-    <br>
-    <br>
-    <strong>A distribuição do Siriema é gratuita, livre e também desejada.</strong>
-    <br>
-    <br>
-    Clique no botão abaixo para realizar o download do arquivo .zip que contém o executável do Siriema, bem como o seu manual.
-    <%= button_to "Download", action: "download", class: "btn btn-nerf mt-4" %>
+    <p>
+      Obrigado, <strong><%= @siriema_user.name %></strong>, pelo seu interesse no software Siriema!
+      <br>
+      <br>
+      <strong>A distribuição do Siriema é gratuita, livre e também desejada.</strong>
+      <br>
+      <br>
+      Clique no botão abaixo para realizar o download do arquivo .zip que contém o executável do Siriema, bem como o seu manual.
+      <br>
+    </p>
+    <div class="row">
+      <div class="d-flex col-4 justify-content-between">
+      <%# <%= link_to '<i class="fa-solid fa-file-zipper"></i> Download (PT-BR)'.html_safe, 'https://github.com/nerf-ufrgs/siriema/blob/main/SIRIEMA_2_0_EN.zip?raw=true', class: 'btn btn-success mt-3' %>
+      <%# <%= link_to '<i class="fa-solid fa-file-zipper"></i> Download (EN)'.html_safe, 'https://github.com/nerf-ufrgs/siriema/blob/main/SIRIEMA_2_0_EN.zip?raw=true', class: 'btn btn-success mt-3' %>
+      <%= link_to '<i class="fa-solid fa-file-zipper"></i> Download (PT-BR)'.html_safe, download_siriema_pt_path, class: 'btn btn-success mt-3' %>
+      <%= link_to '<i class="fa-solid fa-file-zipper"></i> Download (EN)'.html_safe, download_siriema_en_path, class: 'btn btn-success mt-3' %>
+      </div>
+    </div>
   </div>
 </div>
