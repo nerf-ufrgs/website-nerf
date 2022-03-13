@@ -8,29 +8,26 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle btn-nerf" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Equipe
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <%= link_to "Membros", members_path, class: "dropdown-item" %>
-            <%= link_to "Colaboradores", collaborators_path, class: "dropdown-item" %>
-            <%= link_to "Colaboradores antigos", ancient_collaborators_path, class: "dropdown-item" %>
-          </div>
+        <li class="nav-item btn-nerf">
+          <%= link_to "Siriema", siriema_index_path, class: "nav-link" %>
         </li>
+        <%# <li class="nav-item dropdown"> %>
+          <%# <a class="nav-link dropdown-toggle btn-nerf" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> %>
+            <%# Equipe %>
+          <%# </a> %>
+          <%# <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> %>
+            <%# <%= link_to "Membros", members_path, class: "dropdown-item" %>
+            <%# <%= link_to "Colaboradores", collaborators_path, class: "dropdown-item" %>
+            <%# <%= link_to "Colaboradores antigos", ancient_collaborators_path, class: "dropdown-item" %>
+          <%# </div> %>
+        <%# </li> %>
         <%# if user_signed_in? %>
-          <li class="nav-item btn-nerf">
-            <%= link_to "Produção", "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item btn-nerf">
-            <%= link_to "Siriema", siriema_index_path, class: "nav-link" %>
-          </li>
-          <li class="nav-item btn-nerf">
-            <%= link_to "Sites<br />sugeridos".html_safe, "#", class: "nav-link" %>
-          </li>
-          <li class="nav-item btn-nerf">
-            <%= link_to "Contato", "#", class: "nav-link" %>
-          </li>
+        <%# <li class="nav-item btn-nerf"> %>
+          <%# <%= link_to "Produção", "#", class: "nav-link" %>
+        <%# </li> %>
+        <%# <li class="nav-item btn-nerf"> %>
+          <%# <%= link_to "Sites<br />sugeridos".html_safe, "#", class: "nav-link" %>
+        <%# </li> %>
         <%# else %>
           <!--li class="nav-item"-->
             <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
