@@ -10,6 +10,7 @@ gem 'friendly_id', '~> 5.4', '>= 5.4.2'
 gem 'creek', '~> 2.5', '>= 2.5.3'
 gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6', groups: [:development, :test]
+gem 'cloudinary', '~> 1.22'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.0"
